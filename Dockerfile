@@ -4,6 +4,13 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y build-dep python-matplotlib
 
+# nodejs, detects distribution and adds the right repo
+RUN apt-get update && \
+    apt-get -qy install --fix-missing --no-install-recommends \
+        curl \
+        && \
+    curl -sL https://deb.nodesource.com/setup_4.x | bash -
+
 RUN apt-get update && \
     apt-get -qy upgrade --fix-missing --no-install-recommends && \
     apt-get -qy install --fix-missing --no-install-recommends && \
