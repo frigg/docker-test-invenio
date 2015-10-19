@@ -66,4 +66,6 @@ RUN apt-get update && apt-get install -y \
         libwpd-0.9-9 libwpg-0.2-2 libwps-0.2-2 libyajl2 lp-solve python3-uno \
         systemd-services systemd-shim uno-libs3 ure xfonts-mathml \
         apache2-mpm-worker clisp giflib-tools gnuplot html2text pdftk postfix \
-        pstotext python-libxml2 python-libxslt1 sbcl texlive
+        pstotext python-libxml2 python-libxslt1 sbcl texlive \
+        libreoffice-script-provider-python \
+        hdf5-helpers libhdf5-7 libhdf5-dev
