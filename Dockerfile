@@ -1,6 +1,6 @@
 FROM frigg/frigg-test-base:latest
 
-RUN apt-get update && apt-get install \
+RUN apt-get update && apt-get install -y \
         cython \
         gcc \
         git \
