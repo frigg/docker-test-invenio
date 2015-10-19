@@ -2,8 +2,7 @@ FROM frigg/frigg-test-base
 
 
 # add invenio user
-RUN useradd --home-dir /home/invenio --create-home --shell /bin/bash --uid 1000 invenio
-
+# RUN useradd --home-dir /home/invenio --create-home --shell /bin/bash --uid 1000 invenio
 
 # nodejs, detects distribution and adds the right repo
 RUN apt-get update && \
