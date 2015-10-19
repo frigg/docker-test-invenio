@@ -1,8 +1,13 @@
 FROM frigg/frigg-test-base:latest
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && apt-get -y build-dep python-matplotlib
 
-RUN apt-get update && apt-get install -y freetype* \
+RUN apt-get update && \
+    apt-get -qy upgrade --fix-missing --no-install-recommends && \
+    apt-get -qy install --fix-missing --no-install-recommends && \
+    apt-get install -y freetype* \
         cython \
         gcc \
         git \
@@ -67,4 +72,19 @@ RUN apt-get update && apt-get install -y freetype* \
         apache2-mpm-worker clisp giflib-tools gnuplot html2text pdftk postfix \
         pstotext python-libxml2 python-libxslt1 sbcl texlive \
         libreoffice-script-provider-python \
-        hdf5-helpers libhdf5-7 libhdf5-dev
+        hdf5-helpers libhdf5-7 libhdf5-dev && \
+            apt-get clean autoclean && \
+            apt-get autoremove -y && \
+            rm -rf /var/lib/{apt,dpkg}/ && \
+            (find /usr/share/doc -depth -type f ! -name copyright -delete || true) && \
+            (find /usr/share/doc -empty -delete || true) && \
+            rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* && \
+            pip install --upgrade pip && \
+            pip install ipdb \
+                ipython \
+                mock \
+                unittest2 \
+                watchdog \
+                && \
+            npm update && \
+            npm install --silent -g bower less clean-css uglify-js requirejs
