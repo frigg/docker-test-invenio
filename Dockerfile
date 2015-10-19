@@ -1,10 +1,8 @@
 FROM frigg/frigg-test-base:latest
 
-
-RUN apt-get update && apt-get install -y freetype*
 RUN apt-get update && apt-get -y build-dep python-matplotlib
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y freetype* \
         cython \
         gcc \
         git \
@@ -19,6 +17,7 @@ RUN apt-get update && apt-get install -y \
         mysql-client \
         poppler-utils \
         sudo \
+        linux-libc-dev \
         aglfn autoconf autotools-dev binfmt-support fontconfig fonts-liberation \
         fonts-lmodern fonts-texgyre gcj-4.8-jre-lib gnuplot-nox groff groff-base \
         hicolor-icon-theme imagemagick imagemagick-common latex-beamer latex-xcolor \
