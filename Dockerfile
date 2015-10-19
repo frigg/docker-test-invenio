@@ -65,3 +65,5 @@ RUN apt-get update && apt-get install -y \
         libreoffice-style-human libreoffice-writer libsystemd-login0 libvisio-0.0-0 \
         libwpd-0.9-9 libwpg-0.2-2 libwps-0.2-2 libyajl2 lp-solve python3-uno \
         systemd-services systemd-shim uno-libs3 ure xfonts-mathml \
+        apache2-mpm-worker clisp giflib-tools gnuplot html2text pdftk postfix \
+        pstotext python-libxml2 python-libxslt1 sbcl texlive
