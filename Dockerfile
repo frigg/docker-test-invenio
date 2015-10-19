@@ -87,10 +87,6 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
-    rm -rf /var/lib/{apt,dpkg}/ && \
-    (find /usr/share/doc -depth -type f ! -name copyright -delete || true) && \
-    (find /usr/share/doc -empty -delete || true) && \
-    rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* && \
     pip install --upgrade pip && \
     pip install ipdb \
         ipython \
