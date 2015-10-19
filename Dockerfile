@@ -81,19 +81,22 @@ RUN apt-get update && \
         apache2-mpm-worker clisp giflib-tools gnuplot html2text pdftk postfix \
         pstotext python-libxml2 python-libxslt1 sbcl texlive \
         libreoffice-script-provider-python \
-        hdf5-helpers libhdf5-7 libhdf5-dev && \
-            apt-get clean autoclean && \
-            apt-get autoremove -y && \
-            rm -rf /var/lib/{apt,dpkg}/ && \
-            (find /usr/share/doc -depth -type f ! -name copyright -delete || true) && \
-            (find /usr/share/doc -empty -delete || true) && \
-            rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* && \
-            pip install --upgrade pip && \
-            pip install ipdb \
-                ipython \
-                mock \
-                unittest2 \
-                watchdog \
-                && \
-            npm update && \
-            npm install --silent -g bower less clean-css uglify-js requirejs
+        hdf5-helpers libhdf5-7 libhdf5-dev
+
+
+RUN apt-get update && \
+    apt-get clean autoclean && \
+    apt-get autoremove -y && \
+    rm -rf /var/lib/{apt,dpkg}/ && \
+    (find /usr/share/doc -depth -type f ! -name copyright -delete || true) && \
+    (find /usr/share/doc -empty -delete || true) && \
+    rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* && \
+    pip install --upgrade pip && \
+    pip install ipdb \
+        ipython \
+        mock \
+        unittest2 \
+        watchdog \
+        && \
+    npm update && \
+    npm install --silent -g bower less clean-css uglify-js requirejs
