@@ -4,6 +4,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y build-dep python-matplotlib
 
+RUN useradd --home-dir /home/invenio --create-home --shell /bin/bash --uid 1000 invenio
+
 # nodejs, detects distribution and adds the right repo
 RUN apt-get update && \
     apt-get -qy install --fix-missing --no-install-recommends \
