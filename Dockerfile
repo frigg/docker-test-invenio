@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
         mysql-client \
         poppler-utils \
         sudo \
+        build-dep python-matplotlib \
         aglfn autoconf autotools-dev binfmt-support fontconfig fonts-liberation \
         fonts-lmodern fonts-texgyre gcj-4.8-jre-lib gnuplot-nox groff groff-base \
         hicolor-icon-theme imagemagick imagemagick-common latex-beamer latex-xcolor \
@@ -41,7 +42,7 @@ RUN apt-get update && apt-get install -y \
         texlive-latex-recommended texlive-latex-recommended-doc texlive-luatex \
         texlive-pstricks texlive-pstricks-doc tipa tk tk8.6 x11-utils \
         x11-xserver-utils xbitmaps xdg-utils xterm \
-        dbus dbus-x11 dictionaries-common fonts-dejavu fonts-dejavu-extra \
+        dbus dbus-x11 dictionaries-common tex-common fonts-dejavu fonts-dejavu-extra \
         fonts-opensymbol fonts-sil-gentium fonts-sil-gentium-basic gconf-service \
         gconf-service-backend gconf2 gconf2-common hunspell-en-us libapparmor1 \
         libatk1.0-0 libatk1.0-data libboost-date-time1.54.0 libcdr-0.0-0 \
@@ -60,5 +61,4 @@ RUN apt-get update && apt-get install -y \
         libreoffice-sdbc-firebird libreoffice-sdbc-hsqldb libreoffice-style-galaxy  \
         libreoffice-style-human libreoffice-writer libsystemd-login0 libvisio-0.0-0 \
         libwpd-0.9-9 libwpg-0.2-2 libwps-0.2-2 libyajl2 lp-solve python3-uno \
-        systemd-services systemd-shim uno-libs3 ure xfonts-mathml
-
+        systemd-services systemd-shim uno-libs3 ure xfonts-mathml \
