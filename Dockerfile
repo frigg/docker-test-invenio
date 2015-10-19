@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y \
         mysql-client \
         poppler-utils \
         sudo \
-        freetype* \
         aglfn autoconf autotools-dev binfmt-support fontconfig fonts-liberation \
         fonts-lmodern fonts-texgyre gcj-4.8-jre-lib gnuplot-nox groff groff-base
         hicolor-icon-theme imagemagick imagemagick-common latex-beamer latex-xcolor \
