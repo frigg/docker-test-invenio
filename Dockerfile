@@ -34,7 +34,7 @@ RUN apt-get update && apt-get install -y \
         libxcb-sync1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxft2 \
         libxi6 libxinerama1 libxmu6 libxmuu1 libxpm4 libxrandr2 libxshmfence1 \
         libxss1 libxv1 libxxf86dga1 libxxf86vm1 lmodern luatex m4 pgf prosper ps2eps \
-        psutils shared-mime-info tcl tcl8.6 tex-common tex-gyre texlive-base \
+        psutils shared-mime-info tcl tcl8.6 tex-gyre texlive-base \
         texlive-binaries texlive-extra-utils texlive-font-utils \
         texlive-fonts-recommended texlive-fonts-recommended-doc \
         texlive-generic-recommended texlive-latex-base texlive-latex-base-doc \
@@ -60,5 +60,4 @@ RUN apt-get update && apt-get install -y \
         libreoffice-sdbc-firebird libreoffice-sdbc-hsqldb libreoffice-style-galaxy  \
         libreoffice-style-human libreoffice-writer libsystemd-login0 libvisio-0.0-0 \
         libwpd-0.9-9 libwpg-0.2-2 libwps-0.2-2 libyajl2 lp-solve python3-uno \
-        systemd-services systemd-shim uno-libs3 ure xfonts-mathml \
-
+        systemd-services systemd-shim uno-libs3 ure xfonts-mathml
