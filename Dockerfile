@@ -41,5 +41,25 @@ RUN apt-get update && apt-get install -y \
         texlive-generic-recommended texlive-latex-base texlive-latex-base-doc \
         texlive-latex-recommended texlive-latex-recommended-doc texlive-luatex \ 
         texlive-pstricks texlive-pstricks-doc tipa tk tk8.6 x11-utils \
-        x11-xserver-utils xbitmaps xdg-utils xterm
+        x11-xserver-utils xbitmaps xdg-utils xterm \
+        dbus dbus-x11 dictionaries-common fonts-dejavu fonts-dejavu-extra \
+        fonts-opensymbol fonts-sil-gentium fonts-sil-gentium-basic gconf-service \
+        gconf-service-backend gconf2 gconf2-common hunspell-en-us libapparmor1 \
+        libatk1.0-0 libatk1.0-data libboost-date-time1.54.0 libcdr-0.0-0 \
+        libclucene-contribs1 libclucene-core1 libcmis-0.4-4 libcolamd2.8.0 \
+        libexttextcat-2.0-0 libexttextcat-data libgconf-2-4 libglu1-mesa \
+        libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libgtk2.0-0 libgtk2.0-bin \
+        libgtk2.0-common libharfbuzz-icu0 libhsqldb1.8.0-java libhunspell-1.3-0 \
+        libhyphen0 liblangtag-common liblangtag1 libmhash2 libmspub-0.0-0 \
+        libmythes-1.2-0 libneon27-gnutls libnspr4 libnss3 libnss3-nssdb liborc-0.4-0  \
+        liborcus-0.6-0 libpam-systemd libraptor2-0 librasqal3 librdf0 libreoffice \
+        libreoffice-avmedia-backend-gstreamer libreoffice-base libreoffice-base-core \
+        libreoffice-base-drivers libreoffice-calc libreoffice-common  \
+        libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk  \
+        libreoffice-impress libreoffice-java-common libreoffice-math  \
+        libreoffice-pdfimport libreoffice-report-builder-bin \
+        libreoffice-sdbc-firebird libreoffice-sdbc-hsqldb libreoffice-style-galaxy  \
+        libreoffice-style-human libreoffice-writer libsystemd-login0 libvisio-0.0-0 \
+        libwpd-0.9-9 libwpg-0.2-2 libwps-0.2-2 libyajl2 lp-solve python3-uno \
+        systemd-services systemd-shim uno-libs3 ure xfonts-mathml \
 
