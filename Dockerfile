@@ -2,6 +2,7 @@ FROM frigg/frigg-test-base:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
+
 RUN apt-get update && apt-get install -y \
         postfix \
         htop \
